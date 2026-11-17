@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Student Portal</title>
+</head>
+
+<body style="font-family:Arial, sans-serif; background-color:white; color:black;">
+
+    <header id="home"
+        style="background-color:#123b65; color:white; text-align:center; padding:20px;">
+
+        <h1 style="margin:5px;">CHITKARA UNIVERSITY</h1>
+        <h2 style="margin:8px;">Student Portal</h2>
+        <p><i>Your Learning, Your Progress, Your Future</i></p>
+
+    </header>
+
+    <nav style="background-color:rgb(55, 55, 172); padding:15px; text-align:center;">
+
+        <a href="#home" style="color:white;">Home</a>
+        <a href="#dashboard" style="color:white;">Dashboard</a>
+        <a href="#courses" style="color:white;">Courses</a>
+        <a href="#notices" style="color:white;">Notices</a>
+        <a href="#feedback" style="color:white;;">Feedback</a>
+        <a href="#contact" style="color:white;">Contact</a>
+
+    </nav>
+
+    <main style="padding:20px;">
+
+        <section id="welcome">
+
+            <h2 style="color:#123b65;">Welcome to the Student Portal!</h2>
+
+            <p>
+                This portal helps students access course information,
+                college announcements, and student services in one place.
+            </p>
+
+            <a href="#courses" > Explore Courses </a>
+            <br>
+            <a href="#feedback"> Give Feedback </a>
+
+        </section>
+        <br>
+        <section id="dashboard">
+
+            <h2 style="color:#123b65;">Student Dashboard</h2>
+
+            <p><b>Student Name:</b> Gurpreet Singh</p>
+            <p><b>Programme:</b> B.Tech Computer Science</p>
+            <p><b>Semester:</b> First Semester</p>
+
+            <h2>Quick Access</h2>
+
+            <ul>
+                <li><a href="#courses">View My Courses</a></li>
+                <li><a href="#notices">Latest Notices</a></li>
+                <li><a href="#feedback">Submit Feedback</a></li>
+            </ul>
+
+        </section>
+        <br>
+        <section id="courses">
+
+            <h2 style="color:#1a3b5d;">My Courses</h2>
+            <p>First semester course information is given below.</p>
+
+            <table border="2" cellpadding="10" cellspacing="0"
+                style="width:100%; text-align:left; background-color:white;">
+
+                <tr style="background-color:#205d91; color:white;">
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                </tr>
+
+                <tr>
+                    <td>FCS</td>
+                    <td>Fundamentals of Computer Science</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>IWT</td>
+                    <td>Introduction to Web Technology</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>LAC</td>
+                    <td>Linear Algebra and Calculus</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>SPC</td>
+                    <td>Structured Programming Concepts</td>
+                    <td>4</td>
+                </tr>
+
+            </table>
+
+        </section>
+        <br>
+        <section id="notices">
+
+            <h2 style="color:#123b65;">Latest Notices</h2>
+
+            <article style="border-left:4px solid #dc3535; padding-left:12px;">
+                <h3>Examination Notice</h3>
+                <p>Students should check their examination timetable
+                   and prepare according to the announced schedule.</p>
+            </article>
+
+            <article style="border-left:4px solid rgb(2, 101, 2); padding-left:12px;">
+                <h3>Library Notice</h3>
+                <p>Students are encouraged to use the college library
+                   for books and reference materials.</p>
+            </article>
+
+            <article style="border-left:4px solid #e0a020; padding-left:12px;">
+                <h3>Technical Events</h3>
+                <p>Students can participate in upcoming technical
+                   activities and departmental events.</p>
+            </article>
+
+        </section>
+        <br>
+        <section id="feedback">
+
+            <h2 style="color:#123b65;">Student Feedback Form</h2>
+            <p>Please share your suggestions with us.</p>
+
+            <form action="#" method="post">
+
+                <fieldset style="padding:20px;">
+                    <legend><b>Feedback Details</b></legend>
+
+                    <label for="name">Full Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required
+                        style="width:95%; padding:10px; margin:8px 0;">
+                    <br>
+
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required
+                        style="width:95%; padding:10px; margin:8px 0;">
+                    <br>
+
+                    <label for="subject">Feedback Subject:</label>
+                    <br>
+                    <select id="subject" name="subject" required
+                        style="width:98%; padding:10px; margin:8px 0;">
+                        <option value="">-- Select a subject --</option>
+                        <option value="courses">Courses</option>
+                        <option value="library">Library</option>
+                        <option value="facilities">College Facilities</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <br><br>
+
+                    <label>Rate Your Experience:</label>
+                    <br>
+                    <input type="radio" id="excellent" name="rating" value="excellent" required>
+                    <label for="excellent">Excellent</label>
+
+                    <input type="radio" id="good" name="rating" value="good">
+                    <label for="good">Good</label>
+
+                    <input type="radio" id="average" name="rating" value="average">
+                    <label for="average">Average</label>
+                    <br><br>
+
+                    <label for="message">Your Feedback:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your suggestions here..." required
+                        style="width:95%; padding:10px; margin:8px 0;">
+                    </textarea>
+                    <br>
+
+                    <input type="checkbox" id="confirm" name="confirm" required>
+                    <label for="confirm">
+                        I confirm that the given information is correct.
+                    </label>
+                    <br><br>
+
+                    <button type="submit"
+                        style="background-color:#205d91; color:white; padding:10px 18px; ">
+                        Submit Feedback
+                    </button>
+
+                    <button type="reset"
+                        style="background-color:#666; color:white; padding:10px 18px;">
+                        Clear Form
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <section id="contact">
+
+            <h2 style="color:#123b65;">Contact Student Support</h2>
+            <p>For academic or portal-related assistance, contact
+               your college's student support department.</p>
+            <p><b>Department:</b> Student Support</p>
+            <p><b>University:</b> Chitkara University</p>
+
+            <a href="#home">Back to Home</a>
+
+        </section>
+
+    </main>
+
+    <footer style="background-color:#123b65; color:white;
+                   text-align:center; padding:15px;">
+
+        <p>&copy; 2026 Chitkara University Student Portal</p>
+
+    </footer>
+
+</body>
+</html>
